@@ -79,20 +79,18 @@
 //   }
 // }
 
-
 // for ( num = 10 ; num <= 50 ; num++){
-//     let prime = true ; 
+//     let prime = true ;
 //     for ( i = 2 ; i < num ; i++){
 //         if ( num % i == 0 ){
 //             prime = false;
 //         }
-       
+
 //     }
 //      if(prime){
 //             console.log(num)
 //         }
 // }
-
 
 //  7)Filter names that start with vowels.
 // Input: ["Alice", "Bob", "Eve", "Uma", "Charlie"]
@@ -105,8 +103,6 @@
 // })
 // console.log(ele)
 
-
-
 // let arr =  ["Alice", "Bob", "Eve", "Uma", "Charlie"];
 // let ele = arr.filter(function(num){
 //     let vowel = num[0].toLowerCase();
@@ -114,30 +110,28 @@
 // })
 // console.log(ele)
 
-
 // 9) Check if all array elements are greater than 10.
 // Input: [12, 15, 22]
 // Output: true
 
 // let arr = [12, 15, 22 , 9 ];
-// let greater =  true ; 
+// let greater =  true ;
 // for ( let i = 0 ; i < arr.length ; i ++){
 //    if ( arr[i] <= 10){
-//     greater = false ; 
+//     greater = false ;
 //     break;
 //    }
 // }
 // console.log(greater)
 
 // let element = arr.map((num)=> num <= 10 ? "false" : "true")
-// console.log(element)                                                           
-
+// console.log(element)
 
 // 10) Filter numbers divisible by 3 and 5.
 // Input: [10, 15, 30, 20, 45]
 // Output: [15, 30, 45]
 
-// let arr = [10, 15, 30, 20, 45] ; 
+// let arr = [10, 15, 30, 20, 45] ;
 // let element = arr.filter((num)=>num % 3 == 0 && num % 5 == 0 )
 // console.log(element);
 
@@ -150,7 +144,6 @@
 // }
 //   console.log(arr);
 
-
 // 12)  Count occurrences of a value in array.
 // Input: [1, 2, 1, 3, 1, 4], Element: 1
 // Output: 3
@@ -158,18 +151,15 @@
 // let element = arr.reduce((acc , curr) => curr == 1 ? acc+1 : acc , 0)
 // console.log(element)
 
-
-
 // 13)Sum of even numbers using reduce.
 // Input: [1, 2, 3, 4, 5, 6]
 // Output: 12
 
 // let arr = [1, 2, 3, 4, 5, 6];
 // let element = arr.reduce((acc , curr) =>{
-//   return  curr % 2 == 0 ? acc + curr :acc 
+//   return  curr % 2 == 0 ? acc + curr :acc
 // } , 0)
 // console.log(element)
-
 
 //  14)Check if string is palindrome.
 // Input: "madam"
@@ -178,7 +168,6 @@
 // let string = "madam"
 // let element = string == string.split("").reverse().join("")
 // console.log(element)
-
 
 // 3. Reverse only words in an array of strings.
 // Input: ["hello", "world"]
@@ -196,9 +185,9 @@
 // }
 // console.log(reverse)
 
-// 17. Remove duplicates from array without Set. 
-// Input: [1, 2, 2, 3, 4, 1] 
-// Output: [1, 2, 3, 4] 
+// 17. Remove duplicates from array without Set.
+// Input: [1, 2, 2, 3, 4, 1]
+// Output: [1, 2, 3, 4]
 
 // let arr =  [1, 2, 2, 3, 4, 1] ;
 // let element = arr.filter((num , index )=>{
@@ -206,16 +195,16 @@
 // });
 // console.log(element)
 
-// 18. Slice first 3 elements of array. 
-// Input: [10, 20, 30, 40, 50] 
-// Output: [10, 20, 30] 
+// 18. Slice first 3 elements of array.
+// Input: [10, 20, 30, 40, 50]
+// Output: [10, 20, 30]
 
 // let arr  = [10, 20, 30, 40, 50] ;
 // let ele = arr.slice(0,3)
 // console.log(ele)
 
-// 20. Reverse array using while loop (in-place). 
-// Input: [1, 2, 3, 4] 
+// 20. Reverse array using while loop (in-place).
+// Input: [1, 2, 3, 4]
 // Output: [4, 3, 2, 1]
 
 // let arr = [1, 2, 3, 4] ;
@@ -225,3 +214,49 @@
 //    reverse.push(ele)
 // }
 // console.log(reverse);
+
+// 20. Reverse array using while loop (in-place).
+// Input: [1, 2, 3, 4]
+// Output: [4, 3, 2, 1]
+
+// let arr = [1, 2, 3, 4] ;
+// let reverse = [];
+// for (let i = arr.length -1 ; i >=0 ; i--){
+//     reverse.push(arr[i])
+// }
+// console.log(reverse)
+
+// 22. Find the largest prime number in an array.
+// Input: [10, 23, 15, 37, 41, 29]
+
+//  let arr = [10, 23, 15, 37, 41, 29];
+//  let prime = true;
+//  let highestPrime = 0;
+//  for (let i = 2; i <arr.length ; i++){
+//     if(arr[i] % i ==0){
+//         prime=false;
+//         break
+//     }
+//     if(prime){
+//         console.log(arr[i])
+//     }
+//     highestPrime = Math.max(highestPrime , arr[i])
+
+//  }
+//  console.log("Highest Prime Number: ", highestPrime)
+
+// 24. Find the second largest prime number in an array.
+// Input: [10, 23, 15, 37, 41, 29]
+
+// let arr = [10, 23, 15, 37, 41, 29];
+// let highest = 0;
+// let secoundHighest = 0;
+//  for (let i = 0 ; i < arr.length ; i++){
+//     if( arr[i] > highest){
+//      secoundHighest = highest ;
+//      highest = arr[i]
+//     } else if(arr[i] > secoundHighest && arr[i] < highest){
+//      secoundHighest = arr[i]
+//     }
+// }
+// console.log("Second Highest Prime Number: ", secoundHighest)
