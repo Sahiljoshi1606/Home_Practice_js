@@ -1,4 +1,4 @@
-// 1. Find the second highest number in an array without sorting it.
+// 1. Find the second highest number in an array without sorting it.   
 // Input: [10, 5, 20, 8, 15]
 // Output: 15
 
