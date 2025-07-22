@@ -7,16 +7,16 @@
 // }, 1000);
 
 
-var counter = 1 ; 
-const myid = setInterval(() => {
-    console.log(counter )
-    if(counter == 5){
-        clearInterval(myid)
-    }
-    else{
-        counter++
-    }
-}, 1000);
+// var counter = 1 ; 
+// const myid = setInterval(() => {
+//     console.log(counter )
+//     if(counter == 5){
+//         clearInterval(myid)
+//     }
+//     else{
+//         counter++
+//     }
+// }, 1000);
 
 // let counter = 1;
 
